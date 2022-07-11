@@ -50,7 +50,7 @@ async def on_message(message):
         embed.add_field(name="New command", value="Disponible prochainement", inline=False)
         await message.channel.send(embed=embed)
         await message.delete()
-    #Réponds Pong à Ping
+    #RÃ©ponds Pong Ã  Ping
     if message.content.startswith('Ping'):
         embed = discord.Embed(title="\U0001F3D3 Pong !", color=0x00ff00)
         await message.channel.send(embed=embed)
@@ -61,7 +61,7 @@ async def on_message(message):
         await message.channel.send(response)
         await message.delete()
         return
-    #Réponds à Say par ce qui suit Say
+    #RÃ©ponds Ã  Say par ce qui suit Say
     if message.content.startswith('Say'):
         response = (message.content)
         await message.channel.send(response)
@@ -75,4 +75,4 @@ async def on_message(message):
     
 
 #Token du bot (Cybit#7254)
-client.run('OTg5ODY0OTM1NjY2Mzc2NzQ4.GJYwqH.I4XzXxTFVO9no8kWBCJ3ifxjUitCR3W6njwP0k')
+client.run('TOKEN')
